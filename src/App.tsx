@@ -1,9 +1,16 @@
-import "./App.css";
+import PasteArea from "./components/pasteArea";
+import TopBar from "./components/topBar";
+import { MainContainer, TextAreaContainer } from "./styles/styles";
 
 function App() {
   return (
     <>
-      <h1>PasteProject.org</h1>
+      <TopBar />
+      <MainContainer>
+        <TextAreaContainer>
+          <PasteArea />
+        </TextAreaContainer>
+      </MainContainer>
     </>
   );
 }
